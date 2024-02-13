@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Will You Be My Valentine?</h1>
+    <p>Dear Oleg,</p>
+    <p>I wanted to take this opportunity to tell you how much you mean to me. You fill my life with love and happiness, and I can't imagine spending Valentine's Day without you.</p>
+    <p>So, will you be my Valentine?</p>
+    <div class="checkboxes">
+        <input type="checkbox" id="yes" name="valentine" value="yes">
+        <label for="yes">Yes</label>
+        <input type="checkbox" id="no" name="valentine" value="no">
+        <label for="no">No</label>
+      </div>
+    <div class="gif-input">
+    <div class="gif-container">
+      <img id="valentine-gif" src="https://64.media.tumblr.com/4af06b7f72b7065f8c4d27dce5ee5f81/05942dff7f9b18d0-51/s500x750/659230eb0f9c67d6d279a17945445ee35d3befc7.gif" alt="Valentine GIF">
+    </div>
+    <p>With all my love,</p>
+    <p>Aleeza</p>
+  </div>
+
+  <script>
+    function setGif() {
+      var gifUrl = document.getElementById("gif-url").value;
+      document.getElementById("valentine-gif").src = gifUrl;
+    }
+  </script>
+  <script>
+    document.getElementById("no").addEventListener("change", function() {
+      document.getElementById("yes").classList.toggle("bigger");
+    });
+
+    function setGif() {
+      var gifUrl = document.getElementById("gif-url").value;
+      document.getElementById("valentine-gif").src = gifUrl;
+    }
+  </script>
+</body>
+</html>
